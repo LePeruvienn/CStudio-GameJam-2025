@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6118439915981426823}
   - component: {fileID: -9035278822814073836}
   - component: {fileID: 7418891197173584115}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LaMeufChiante
   m_TagString: Untagged
   m_Icon: {fileID: 0}
