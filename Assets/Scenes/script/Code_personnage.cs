@@ -1,18 +1,15 @@
-using System.Xml.Linq;
-using UnityEngine;
 using Mono.Cecil.Cil;
 using NUnit.Framework;
+using System.Collections.Generic;
+using System.Xml.Linq;
+using UnityEngine;
 
 
 public class Code_personnage : MonoBehaviour {
 
-    [SerializeField] string name; //affiche et rend monifiable le nom en bas a droite
+    [SerializeField] string nom; //affiche et rend monifiable le nom en bas a droite
     public string Name { get { return name; } }
 
-    [TextArea]
-
-    [SerializeField] string description;
-    public string Description { get { return description; } }
 
     [SerializeField] Sprite face_avant;
     public Sprite Face_avant { get { return face_avant; } }
@@ -35,8 +32,32 @@ public class Code_personnage : MonoBehaviour {
     [SerializeField] int degats_magique;
     public int Degats_magique { get { return degats_magique; } }
 
-    [SerializeField] List inventaires;
-    public List Inventaire { get { return inventaires; } }
+    [SerializeField] int degats_physique;
+    public int Degats_physique { get { return degats_physique; } }
+
+
+    
+    public enum Objet_type
+    {
+        None,
+        épée,
+        potion,
+        skate,
+        hache,
+    }
+
+    [SerializeField] List<Objet> inventaires;
+    [System.Serializable]
+    public class Objet
+    {
+        public Objet_type type;
+        [SerializeField] Texte propriete;
+    }
+
+
+
+
+
 
 
 
