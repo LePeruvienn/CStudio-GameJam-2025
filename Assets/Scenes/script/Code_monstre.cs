@@ -2,7 +2,7 @@ using Mono.Cecil.Cil;
 using NUnit.Framework;
 using UnityEngine;
 
-public class test : MonoBehaviour {
+public class Code_Monstre : MonoBehaviour {
 
     int vitesse = 2;
     [SerializeField] string name; //affiche et rend monifiable le nom en bas a droite
