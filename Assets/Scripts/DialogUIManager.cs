@@ -50,8 +50,8 @@ public class DialogUIManager : MonoBehaviour
 
 			} else if (Input.GetKeyDown(KeyCode.Space)) {
 
-				Dialog _currentDialog = _currentData.dialogs[_currentIndex];
-				_currentIndex+= (_isChoiceYes) ? _currentDialog.indexNextIfYes : _currentDialog.indexNextIfNo;
+				Dialog oldDialog = _currentData.dialogs[_currentIndex];
+				_currentIndex += (_isChoiceYes) ? oldDialog.indexNextIfYes : oldDialog.indexNextIfNo;
 				_isChoosing = false;
 				menuChoice.SetActive(false);
 				yesArrow.SetActive(false);
@@ -66,7 +66,8 @@ public class DialogUIManager : MonoBehaviour
 				}
 
 				_isTyping = true;
-				StartCoroutine(TypeLine(_currentDialog.text, _currentDialog.isChoice));
+				Dialog nextDialog = _currentData.dialogs[_currentIndex];
+				StartCoroutine(TypeLine(nextDialog.text, nextDialog.isChoice));
 			}
 
 			return;
@@ -76,7 +77,8 @@ public class DialogUIManager : MonoBehaviour
 
 		arrowEnd.SetActive(false);
 
-		_currentIndex++;
+		Dialog _oldDialog = _currentData.dialogs[_currentIndex];
+		_currentIndex += _oldDialog.nextIndex;
 
 		// TO END DIALOG
 		if (_currentIndex == _currentData.dialogs.Length) {
