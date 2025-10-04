@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
 	public void setCanMove(bool val) {
 
+		_animator.SetBool("isWalking", false);
 		_canMove = val;
 	}
 }
