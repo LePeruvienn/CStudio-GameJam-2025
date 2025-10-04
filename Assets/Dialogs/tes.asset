@@ -28,6 +28,26 @@ MonoBehaviour:
   - text: "\xE7a va ?"
     isChoice: 1
     indexNextIfYes: 1
+    indexNextIfNo: 2
+    actionIfYes:
+      m_PersistentCalls:
+        m_Calls: []
+    actionIfNo:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: T'es sur tu a l'air d'aller mal ?
+    isChoice: 0
+    indexNextIfYes: 1
+    indexNextIfNo: 0
+    actionIfYes:
+      m_PersistentCalls:
+        m_Calls: []
+    actionIfNo:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: jespere que tu vas bien !!
+    isChoice: 1
+    indexNextIfYes: 1
     indexNextIfNo: 0
     actionIfYes:
       m_PersistentCalls:
