@@ -51,7 +51,8 @@ public class Code_personnage : MonoBehaviour {
     public class Objet
     {
         public Objet_type type;
-        [SerializeField] Texte propriete;
+        [TextArea]
+        [SerializeField] string propriete;
     }
 
 
