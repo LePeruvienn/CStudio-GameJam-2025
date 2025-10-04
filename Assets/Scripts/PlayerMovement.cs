@@ -5,14 +5,19 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private int speed = 2;
 
 	private Rigidbody2D _rigidBody;
+	private Animator _animator;
+	private SpriteRenderer _spriteRenderer;
 
 	private bool _canMove = true;
-	private Vector2 _velocity = new Vector2(0, 0);
+	private Vector2Int _direction = new Vector2Int(0, 0);
+	private Vector2Int _lastDirection = new Vector2Int(0, 0);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rigidBody = GetComponent<Rigidbody2D>();
+		_animator = GetComponent<Animator>();
+		_spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -24,23 +29,35 @@ public class PlayerMovement : MonoBehaviour
 
 	void HandleMovement() {
 
+		_direction = Vector2Int.zero;
+
 		if (Input.GetKey(KeyCode.W))
 		{
-			_velocity.y = speed;
+			_direction.y = 1;
 
 		} else if (Input.GetKey(KeyCode.A))
 		{
-			_velocity.x = -speed;
+			_direction.x = -1;
 
 		} else if (Input.GetKey(KeyCode.S))
 		{
-			_velocity.y = -speed;
+			_direction.y = -1;
 
 		} else if (Input.GetKey(KeyCode.D))
 		{
-			_velocity.x = speed;
+			_direction.x = 1;
 		}
 
-		_rigidBody.linearVelocity = _velocity;
+		if (_direction != Vector2Int.zero)
+			_lastDirection = _direction;
+
+		_animator.SetInteger("directionX", _lastDirection.x);
+		_animator.SetInteger("directionY", _lastDirection.y);
+		_animator.SetBool("isWalking", _direction != Vector2Int.zero);
+
+		_spriteRenderer.flipX = (_lastDirection.x == -1);
+
+		_rigidBody.linearVelocity = _direction * speed;
+
 	}
 }
