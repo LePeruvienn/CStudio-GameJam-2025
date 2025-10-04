@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 	private Vector2Int _lastDirection = new Vector2Int(0, 0);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
         _rigidBody = GetComponent<Rigidbody2D>();
 		_animator = GetComponent<Animator>();
@@ -21,13 +21,13 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
 		if (_canMove == true)
 			HandleMovement();
 	}
 
-	void HandleMovement() {
+	private void HandleMovement() {
 
 		_direction = Vector2Int.zero;
 
@@ -59,5 +59,10 @@ public class PlayerMovement : MonoBehaviour
 
 		_rigidBody.linearVelocity = _direction * speed;
 
+	}
+
+	public void setCanMove(bool val) {
+
+		_canMove = val;
 	}
 }
