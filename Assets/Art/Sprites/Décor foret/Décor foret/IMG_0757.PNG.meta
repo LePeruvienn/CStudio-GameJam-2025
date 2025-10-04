@@ -118,7 +118,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,11 +134,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: IMG_0757_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e49980045ea4243bfffa3a141f7a33
+      internalID: 1558346531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_0757_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3027a1bb53d409bb40e6ce841c4db8
+      internalID: 265267971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_0757_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1a4d83d7648494c9ee0b829f6d73ae
+      internalID: 1193346425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 70880590bea144bf89d25f8e099b7ce2
     internalID: 0
     vertices: []
     indices: 
@@ -149,6 +215,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       IMG_0757_0: -8370053015263520475
+      IMG_0757_1: 1558346531
+      IMG_0757_2: 265267971
+      IMG_0757_3: 1193346425
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
