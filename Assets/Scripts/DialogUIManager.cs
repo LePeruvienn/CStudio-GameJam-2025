@@ -97,7 +97,9 @@ public class DialogUIManager : MonoBehaviour
 
 	public void StartDialog(DialogData data)
 	{
-		_playerMovement.setCanMove(false);
+		if (_playerMovement != null )
+			_playerMovement.setCanMove(false);
+
 		_isDialogOn = true;
 		_currentIndex = 0;
 
