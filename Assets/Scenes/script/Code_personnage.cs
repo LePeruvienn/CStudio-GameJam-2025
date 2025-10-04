@@ -40,7 +40,7 @@ public class Code_personnage : MonoBehaviour {
     public enum Objet_type
     {
         None,
-        épée,
+        epee,
         potion,
         skate,
         hache,
