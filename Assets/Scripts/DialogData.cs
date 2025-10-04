@@ -16,6 +16,7 @@ public struct Dialog
 [CreateAssetMenu(fileName = "DialogData", menuName = "DialogData")]
 public class DialogData : ScriptableObject
 {
-	public string dialogTitle;
+	public string title;
+	public float speed;
 	public Dialog[] dialogs;
 }

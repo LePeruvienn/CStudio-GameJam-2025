@@ -4,24 +4,77 @@ using System.Collections; // obligatoire pour IEnumerator
 
 public class DialogUIManager : MonoBehaviour
 {
-	[SerializeField] private float textSpeed = 0.5f;
 	[SerializeField] private GameObject dialogBox;
 	[SerializeField] private TextMeshProUGUI textUI;
+	[SerializeField] private TextMeshProUGUI titleUI;
+	[SerializeField] private GameObject arrowEnd;
+
+	[SerializeField] private GameObject menuChoice;
+	[SerializeField] private GameObject yesArrow;
+	[SerializeField] private GameObject noArrow;
+
 	[SerializeField] private PlayerMovement _playerMovement;
 
 	private bool _isDialogOn = false;
 	private bool _isTyping = false;
+	private bool _isChoosing = false;
 	private int _currentIndex = 0;
+	private float _currentSpeed;
+	private bool _isChoiceYes;
 	private DialogData _currentData;
 
 	private void Start()
 	{
 		dialogBox.SetActive(false);
+		arrowEnd.SetActive(false);
+		menuChoice.SetActive(false);
+		yesArrow.SetActive(false);
+		noArrow.SetActive(false);
 	}
 
 	private void Update()
 	{
+		if (_isChoosing) {
+
+			if (_isChoiceYes && Input.GetKeyDown(KeyCode.D)) {
+				
+				_isChoiceYes = false;
+				noArrow.SetActive(true);
+				yesArrow.SetActive(false);
+
+			} else if (!_isChoiceYes && Input.GetKeyDown(KeyCode.A)) {
+
+				_isChoiceYes = true;
+				noArrow.SetActive(false);
+				yesArrow.SetActive(true);
+
+			} else if (Input.GetKeyDown(KeyCode.Space)) {
+
+				Dialog _currentDialog = _currentData.dialogs[_currentIndex];
+				_currentIndex+= (_isChoiceYes) ? _currentDialog.indexNextIfYes : _currentDialog.indexNextIfNo;
+				_isChoosing = false;
+				menuChoice.SetActive(false);
+				yesArrow.SetActive(false);
+				noArrow.SetActive(false);
+
+				if (_currentIndex == _currentData.dialogs.Length) {
+
+					_isDialogOn = false;
+					dialogBox.SetActive(false);
+					_playerMovement.setCanMove(true);
+					return;
+				}
+
+				_isTyping = true;
+				StartCoroutine(TypeLine(_currentDialog.text, _currentDialog.isChoice));
+			}
+
+			return;
+		}
+
 		if (!_isDialogOn || _isTyping || !Input.GetKeyDown(KeyCode.Space)) return;
+
+		arrowEnd.SetActive(false);
 
 		_currentIndex++;
 
@@ -35,33 +88,53 @@ public class DialogUIManager : MonoBehaviour
 		}
 
 		_isTyping = true;
-		StartCoroutine(TypeLine(_currentData.dialogs[_currentIndex].text));
+
+		Dialog currentDialog = _currentData.dialogs[_currentIndex];
+		StartCoroutine(TypeLine(currentDialog.text, currentDialog.isChoice));
 	}
 
 	public void StartDialog(DialogData data)
 	{
 		_playerMovement.setCanMove(false);
-		_currentData = data;
 		_isDialogOn = true;
 		_currentIndex = 0;
+
+		_currentData = data;
+		_currentSpeed = data.speed;
+		titleUI.text = data.title;
 
 		dialogBox.SetActive(true);
 
 		_isTyping = true;
-		StartCoroutine(TypeLine(_currentData.dialogs[_currentIndex].text));
+
+		Dialog currentDialog = _currentData.dialogs[_currentIndex];
+		StartCoroutine(TypeLine(currentDialog.text, currentDialog.isChoice));
 	}
 
-	private IEnumerator TypeLine(string text)
+	private IEnumerator TypeLine(string text, bool isChoice)
 	{
 		textUI.text = "";
 
 		foreach (char c in text.ToCharArray())
 		{
 			textUI.text += c;
-			yield return new WaitForSeconds(textSpeed);
+			yield return new WaitForSeconds(_currentSpeed);
 		}
 
 		_isTyping = false;
+
+		if (isChoice) {
+
+			_isChoosing = true;
+			_isChoiceYes = true;
+
+			menuChoice.SetActive(true);
+			yesArrow.SetActive(true);
+
+		} else {
+
+			arrowEnd.SetActive(true);
+		}
 	}
 
 	public bool getIsDialogOn() {

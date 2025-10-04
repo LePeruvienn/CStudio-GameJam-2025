@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
   m_Name: tes
   m_EditorClassIdentifier: 
-  dialogTitle: Marie
+  title: 
+  speed: 0
   dialogs:
   - text: SALUT
     isChoice: 0
@@ -25,8 +26,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - text: "\xE7a va ?"
-    isChoice: 0
-    indexNextIfYes: 0
+    isChoice: 1
+    indexNextIfYes: 1
     indexNextIfNo: 0
     actionIfYes:
       m_PersistentCalls:
