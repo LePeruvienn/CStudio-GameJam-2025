@@ -64,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
 	public void setCanMove(bool val) {
 
 		_animator.SetBool("isWalking", false);
+		_rigidBody.linearVelocity = Vector2.zero;
 		_canMove = val;
 	}
 }

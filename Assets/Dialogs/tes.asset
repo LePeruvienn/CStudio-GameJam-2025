@@ -15,7 +15,8 @@ MonoBehaviour:
   title: 
   speed: 0
   dialogs:
-  - text: SALUT
+  - text: BONJOUR
+    nextIndex: 1
     isChoice: 0
     indexNextIfYes: 0
     indexNextIfNo: 0
@@ -26,7 +27,30 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - text: "\xE7a va ?"
+    nextIndex: 0
     isChoice: 1
+    indexNextIfYes: 2
+    indexNextIfNo: 1
+    actionIfYes:
+      m_PersistentCalls:
+        m_Calls: []
+    actionIfNo:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: AH CHIANT
+    nextIndex: 2
+    isChoice: 0
+    indexNextIfYes: 1
+    indexNextIfNo: 0
+    actionIfYes:
+      m_PersistentCalls:
+        m_Calls: []
+    actionIfNo:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: TROP CONTENTE
+    nextIndex: 1
+    isChoice: 0
     indexNextIfYes: 1
     indexNextIfNo: 2
     actionIfYes:

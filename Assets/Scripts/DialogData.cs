@@ -6,6 +6,7 @@ using System;
 public struct Dialog
 {
 	public string text;
+	public int nextIndex;
 	public bool isChoice;
 	public int indexNextIfYes;
 	public int indexNextIfNo;
