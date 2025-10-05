@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Events;
 using System;
 
 [Serializable]
@@ -10,8 +9,7 @@ public struct Dialog
 	public bool isChoice;
 	public int indexNextIfYes;
 	public int indexNextIfNo;
-	public UnityEvent actionIfYes;
-	public UnityEvent actionIfNo;
+	public bool choiceTriggerAction;
 }
 
 [CreateAssetMenu(fileName = "DialogData", menuName = "DialogData")]

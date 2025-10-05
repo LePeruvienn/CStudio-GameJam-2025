@@ -23,7 +23,11 @@ public class PlayerInteraction : MonoBehaviour
 
 		Collider2D hit = Physics2D.OverlapCircle(transform.position, interactionRange, interactableLayerMask);
 
+		Debug.Log ("TRY HIT");
+
 		if (hit == null) return;
+
+		Debug.Log ("HIT SOMETHING");
 
 		NPCInteraction npc = hit.gameObject.GetComponent<NPCInteraction>();
 
