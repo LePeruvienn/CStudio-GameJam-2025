@@ -32,13 +32,7 @@ public class NPCInteraction : MonoBehaviour
 		_rigidbody = GetComponent<Rigidbody2D>();
 		_collider = GetComponent<Collider2D>();
 
-		// FOR DEBUG !! TO DELETE AFTER
-		// TODO MAKE ALL SCRIPTABLES OBJECTS RESET WHEN NEW GAME
-		npcData.isDead = false;
-		npcData.dialogIndex = 0;
-		// END
-
-        if (npcData.isDead)
+		if (npcData.isDead)
 			Destroy(gameObject);
     }
 
