@@ -17,6 +17,7 @@ public class NPCInteraction : MonoBehaviour
 	[SerializeField] private float deathJumpForce = 6f;
 	[SerializeField] private float deathRotateSpeed = 2f;
 	[SerializeField] private float deathDuration = 10f;
+	[SerializeField] private ParticleSystem deathParticle;
 
 	private Rigidbody2D _rigidbody;
 	private Collider2D _collider;
@@ -84,6 +85,15 @@ public class NPCInteraction : MonoBehaviour
 		_rigidbody.constraints = RigidbodyConstraints2D.None;
 		_rigidbody.linearVelocity = velocity;
 		_rigidbody.gravityScale = 1f;
+
+		// Play death ParticleSystem
+
+		// Instantiate the particle system as a child of the specified parent
+		ParticleSystem instantiatedParticles = Instantiate(deathParticle, transform.position, Quaternion.identity);
+		instantiatedParticles.Play();
+		// Optionally destroy it after a certain time
+		float duration = instantiatedParticles.main.duration + instantiatedParticles.main.startLifetime.constant;
+		Destroy(instantiatedParticles.gameObject, duration);
 	}
 
 	public void GiveItem(string itemName) {

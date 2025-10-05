@@ -4836,6 +4836,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: f7d5261993dfd6381821465581cd45d3, type: 2}
     - target: {fileID: 6118439915981426823, guid: 229a7a9f409f32d2e9bcc62e978e7936, type: 3}
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 5751190481917967672, guid: 973bd0182739faccf90441a4e8320736, type: 3}
+    - target: {fileID: 6118439915981426823, guid: 229a7a9f409f32d2e9bcc62e978e7936, type: 3}
       propertyPath: dialogUIManager
       value: 
       objectReference: {fileID: 1825537280}
