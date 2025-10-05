@@ -42407,7 +42407,7 @@ Transform:
   m_GameObject: {fileID: 793781806}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0.26999998, z: -10.2}
+  m_LocalPosition: {x: 0.23, y: 0.16000003, z: -10.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -71496,7 +71496,7 @@ Transform:
   m_GameObject: {fileID: 985039885}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0.26999998, z: -10.2}
+  m_LocalPosition: {x: 0.23, y: 0.16000003, z: -10.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87267,12 +87267,20 @@ PrefabInstance:
       value: NPCInteraction, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1502946359046929592, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
+      propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Escargot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502946359046929592, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2644047306132964984, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: m_Name
       value: escargot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644047306132964984, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3840480940809540491, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: m_LocalPosition.x
@@ -87350,6 +87358,98 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9d9ce72f19a678eaaeac4990e7c5f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1449501124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449501126}
+  - component: {fileID: 1449501125}
+  m_Layer: 0
+  m_Name: Spline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1449501125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449501124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: 0
+        y: 0
+        z: 0
+      TangentIn:
+        x: -0
+        y: -0
+        z: -0
+      TangentOut:
+        x: 0
+        y: 0
+        z: 0
+      Rotation:
+        value:
+          x: -0.70710665
+          y: 0
+          z: -0
+          w: 0.7071068
+    m_MetaData:
+    - Mode: 0
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!4 &1449501126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449501124}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.074734, y: 22.750319, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1575930484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87586,12 +87686,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3404792775543358490, guid: 7b62be06a426335d3ab0bc08f66178c1, type: 3}
       propertyPath: sceneName
-      value: Foret
+      value: Foret2
       objectReference: {fileID: 0}
     - target: {fileID: 3404792775543358490, guid: 7b62be06a426335d3ab0bc08f66178c1, type: 3}
       propertyPath: sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 5df66fc24dbcb4e1c9e46cdb8d1d76e0, type: 3}
+      objectReference: {fileID: 102900000, guid: 7319adfbe0d2d1a889baf195806ca4d8, type: 3}
     - target: {fileID: 4611669144958743237, guid: 7b62be06a426335d3ab0bc08f66178c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 95.97086
@@ -87901,7 +88001,7 @@ PrefabInstance:
     - target: {fileID: 1502946359046929592, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: 'dialogs.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: 38db48c5859cb431f9d9ff7cbb98f963, type: 2}
+      objectReference: {fileID: 11400000, guid: 7b634807d18284b40ba5c1abafd83197, type: 2}
     - target: {fileID: 1502946359046929592, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: 'dialogs.Array.data[1]'
       value: 
@@ -87951,6 +88051,10 @@ PrefabInstance:
       value: NPCInteraction, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1502946359046929592, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
+      propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Lait
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502946359046929592, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -87961,6 +88065,10 @@ PrefabInstance:
     - target: {fileID: 2644047306132964984, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: m_Name
       value: lait
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644047306132964984, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3840480940809540491, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: m_LocalPosition.x
@@ -88247,12 +88355,20 @@ PrefabInstance:
       value: NPCInteraction, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1502946359046929592, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
+      propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "\xC9p\xE9e du destin"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1502946359046929592, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2644047306132964984, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: m_Name
       value: Epee en toc
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644047306132964984, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3840480940809540491, guid: 5bf3d1f733ff1629d9ba986cd4dc2497, type: 3}
       propertyPath: m_LocalPosition.x
@@ -88446,15 +88562,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3796344047405418327, guid: 8c322b74d334cf7ad9b560df0831ce92, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 3796344047405418327, guid: 8c322b74d334cf7ad9b560df0831ce92, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 3796344047405418327, guid: 8c322b74d334cf7ad9b560df0831ce92, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 3796344047405418327, guid: 8c322b74d334cf7ad9b560df0831ce92, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.2
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3796344047405418327, guid: 8c322b74d334cf7ad9b560df0831ce92, type: 3}
       propertyPath: m_LocalRotation.w
@@ -88519,3 +88635,4 @@ SceneRoots:
   - {fileID: 1944483860}
   - {fileID: 1368989045}
   - {fileID: 1294805341}
+  - {fileID: 1449501126}

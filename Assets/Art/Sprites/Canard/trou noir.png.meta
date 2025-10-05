@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dfd9685ae66c948a8a7c573590df5a7a
+guid: 6f8db46b807884a92aebdade4ee04783
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7781202394294830402
-    second: Untitled_Artwork 2_0
+      213: -1321492643139827912
+    second: trou noir_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork 2_0
+      name: trou noir_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 245cc5dd9526cfb60800000000000000
-      internalID: 7781202394294830402
+      spriteID: 837cb50517d19ade0800000000000000
+      internalID: -1321492643139827912
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Untitled_Artwork 2_0: 7781202394294830402
+      trou noir_0: -1321492643139827912
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
