@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5039bd97acd711efa17d3100df16f14, type: 3}
   m_Name: lait
   m_EditorClassIdentifier: 
-  NPCname: 
+  NPCname: Lait
   dialogIndex: 0
   isDead: 0

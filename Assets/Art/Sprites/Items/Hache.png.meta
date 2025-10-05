@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7f78ab6a5e87046afa2921b2817c9e0d
+guid: 3bbbaeb186e52400a8c2b5319a2650a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7030295280125932743
-    second: canard_0
+      213: 374677648360923393
+    second: Hache_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: canard_0
+      name: Hache_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 30
-        height: 26
+        x: 1
+        y: 1
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93b0df9d0bf5f6e90800000000000000
-      internalID: -7030295280125932743
+      spriteID: 101e4d7065f133500800000000000000
+      internalID: 374677648360923393
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      canard_0: -7030295280125932743
+      Hache_0: 374677648360923393
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
