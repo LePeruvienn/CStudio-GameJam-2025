@@ -76,7 +76,7 @@ public class DialogUIManager : MonoBehaviour
 					}
 				}
 
-				if (_currentIndex == _currentData.dialogs.Length) {
+				if (_currentIndex >= _currentData.dialogs.Length) {
 
 					_isDialogOn = false;
 					dialogBox.SetActive(false);
@@ -100,7 +100,7 @@ public class DialogUIManager : MonoBehaviour
 		_currentIndex += _oldDialog.nextIndex;
 
 		// TO END DIALOG
-		if (_currentIndex == _currentData.dialogs.Length) {
+		if (_currentIndex >= _currentData.dialogs.Length) {
 
 			_isDialogOn = false;
 			dialogBox.SetActive(false);
