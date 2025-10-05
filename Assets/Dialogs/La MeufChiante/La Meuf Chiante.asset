@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
-  m_Name: tes
+  m_Name: La Meuf Chiante
   m_EditorClassIdentifier: 
-  title: 
+  title: MeufChiante
   speed: 0
   dialogs:
   - text: BONJOUR
@@ -51,26 +51,6 @@ MonoBehaviour:
   - text: TROP CONTENTE
     nextIndex: 1
     isChoice: 0
-    indexNextIfYes: 1
-    indexNextIfNo: 2
-    actionIfYes:
-      m_PersistentCalls:
-        m_Calls: []
-    actionIfNo:
-      m_PersistentCalls:
-        m_Calls: []
-  - text: T'es sur tu a l'air d'aller mal ?
-    isChoice: 0
-    indexNextIfYes: 1
-    indexNextIfNo: 0
-    actionIfYes:
-      m_PersistentCalls:
-        m_Calls: []
-    actionIfNo:
-      m_PersistentCalls:
-        m_Calls: []
-  - text: jespere que tu vas bien !!
-    isChoice: 1
     indexNextIfYes: 1
     indexNextIfNo: 0
     actionIfYes:

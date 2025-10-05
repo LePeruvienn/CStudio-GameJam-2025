@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections; // obligatoire pour IEnumerator
+using UnityEngine.Events;
 
 public class DialogUIManager : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class DialogUIManager : MonoBehaviour
 	private int _currentIndex = 0;
 	private float _currentSpeed;
 	private bool _isChoiceYes;
+
+	private UnityEvent _currentActionYes;
+	private UnityEvent _currentActionNo;
+
 	private DialogData _currentData;
 
 	private int _currentResult;
@@ -58,6 +63,18 @@ public class DialogUIManager : MonoBehaviour
 				menuChoice.SetActive(false);
 				yesArrow.SetActive(false);
 				noArrow.SetActive(false);
+
+				if (oldDialog.choiceTriggerAction) {
+
+					if (_isChoiceYes) {
+
+						_currentActionYes.Invoke();
+
+					} else {
+
+						_currentActionNo.Invoke();
+					}
+				}
 
 				if (_currentIndex == _currentData.dialogs.Length) {
 
@@ -97,7 +114,7 @@ public class DialogUIManager : MonoBehaviour
 		StartCoroutine(TypeLine(currentDialog.text, currentDialog.isChoice));
 	}
 
-	public void StartDialog(DialogData data)
+	public void StartDialog(DialogData data, UnityEvent actionYes, UnityEvent actionNo)
 	{
 		if (_playerMovement != null )
 			_playerMovement.setCanMove(false);
@@ -108,6 +125,8 @@ public class DialogUIManager : MonoBehaviour
 		_currentData = data;
 		_currentSpeed = data.speed;
 		titleUI.text = data.title;
+		_currentActionYes = actionYes;
+		_currentActionNo = actionNo;
 
 		dialogBox.SetActive(true);
 

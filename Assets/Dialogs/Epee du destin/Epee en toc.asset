@@ -9,8 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5039bd97acd711efa17d3100df16f14, type: 3}
-  m_Name: La Meuf Chiante
+  m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
+  m_Name: Epee en toc
   m_EditorClassIdentifier: 
-  dialogIndex: 0
-  NPCname: La Meuf chiante
+  title: Epee du destin
+  speed: 0
+  dialogs:
+  - text: Voulez vous prendre cette objet ?
+    nextIndex: 0
+    isChoice: 1
+    indexNextIfYes: 1
+    indexNextIfNo: 1
+    choiceTriggerAction: 1
