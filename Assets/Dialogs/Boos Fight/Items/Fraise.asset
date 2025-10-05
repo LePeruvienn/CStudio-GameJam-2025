@@ -17,7 +17,7 @@ MonoBehaviour:
   dialogs:
   - text: "Tu n'as pas \xE9cout\xE9 Jimmy?? Daursariel n'aime pas les fraises! T'es
       mort!"
-    nextIndex: 99
+    nextIndex: 1
     isChoice: 0
     indexNextIfYes: 0
     indexNextIfNo: 0

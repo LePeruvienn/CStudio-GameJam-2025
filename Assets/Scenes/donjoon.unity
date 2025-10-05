@@ -86869,12 +86869,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3404792775543358490, guid: 7b62be06a426335d3ab0bc08f66178c1, type: 3}
       propertyPath: sceneName
-      value: combat
+      value: BOOS_SCRIPT
       objectReference: {fileID: 0}
     - target: {fileID: 3404792775543358490, guid: 7b62be06a426335d3ab0bc08f66178c1, type: 3}
       propertyPath: sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: d7d91777db111e84d9c54b1cf7648f81, type: 3}
+      objectReference: {fileID: 102900000, guid: af4885b7c136cc6bbbea48c4b74d1947, type: 3}
     - target: {fileID: 4611669144958743237, guid: 7b62be06a426335d3ab0bc08f66178c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.93

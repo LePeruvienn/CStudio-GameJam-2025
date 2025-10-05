@@ -16,7 +16,7 @@ MonoBehaviour:
   speed: 0
   dialogs:
   - text: "Un escargot dans un g\xE2teau? Et puis quoi encore? Une h\xE2che?"
-    nextIndex: 99
+    nextIndex: 1
     isChoice: 0
     indexNextIfYes: 0
     indexNextIfNo: 0

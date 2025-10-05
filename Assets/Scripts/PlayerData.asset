@@ -12,10 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90e1ce5ee193aa25c9b626314b3f4a4a, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  inventory:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
+  inventory: []
   killedNpcs: []

@@ -119,6 +119,135 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &175460706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175460708}
+  - component: {fileID: 175460707}
+  m_Layer: 0
+  m_Name: musiqueplayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &175460707
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175460706}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &175460708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175460706}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6718886, y: -1.2862139, z: -0.0015127471}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &287709348
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,17 +354,41 @@ MonoBehaviour:
   loseImage: {fileID: 1485666105}
   introDialogs:
   - {fileID: 11400000, guid: 43720feb8f0fdfd9da0060930c5f6705, type: 2}
-  defaultDialog: {fileID: 11400000, guid: 323a1b9ba778b2a0cb58a03345ecaf94, type: 2}
+  defaultDialog: {fileID: 11400000, guid: cfee0c10d3392405b9c64fe3dffc79e2, type: 2}
   winDialogs:
   - {fileID: 11400000, guid: 1f0b828eba0c0e023bb068309a4b67a2, type: 2}
   loseDialogs:
   - {fileID: 11400000, guid: 6282b7e51d17320ffbf8f6d551e1bc4b, type: 2}
-  itemsNeededForWin: []
+  itemsNeededForWin:
+  - Farine
+  - "H\xE2che"
+  - Lait
+  - Beurre pas encore fondu
+  - tomate
+  - "\xC9p\xE9e rouill\xE9e"
   itemDialogs:
-  - itemName: 1
-    dialog: {fileID: 11400000, guid: 9cc689355ffddfca1af5e46976c6c581, type: 2}
-  - itemName: 2
-    dialog: {fileID: 11400000, guid: 7dddde6123ee89e3e9c8ea5040558dca, type: 2}
+  - itemName: Farine
+    dialog: {fileID: 11400000, guid: 91ff83019ed514bbf9def4c197f0deaa, type: 2}
+  - itemName: Beurre pas encore fondu
+    dialog: {fileID: 11400000, guid: a8269f04749ea4050ab169762a12f71b, type: 2}
+  - itemName: Canard en plastique
+    dialog: {fileID: 11400000, guid: 323a1b9ba778b2a0cb58a03345ecaf94, type: 2}
+  - itemName: Escargot
+    dialog: {fileID: 11400000, guid: 01fb250909d254203b2103e804735abf, type: 2}
+  - itemName: Fraise
+    dialog: {fileID: 11400000, guid: 2c02afd09042c4b06bfb327999ebc220, type: 2}
+  - itemName: "H\xE2che"
+    dialog: {fileID: 11400000, guid: 4701e8f2efab845b3971f1b2e492514f, type: 2}
+  - itemName: Lait
+    dialog: {fileID: 11400000, guid: 9dffcf3029daf45efb13c5dc959fbab6, type: 2}
+  - itemName: Oeufs
+    dialog: {fileID: 11400000, guid: db9b5b53ba93c43ee82f284ff7250de5, type: 2}
+  - itemName: tomate
+    dialog: {fileID: 11400000, guid: 88378d5ab8a164446a17ecbdee353d16, type: 2}
+  - itemName: "\xC9p\xE9e rouill\xE9e"
+    dialog: {fileID: 11400000, guid: 506a3503ef70a48f9baace249cf16fae, type: 2}
+  - itemName: "\xC9p\xE9e du destin"
+    dialog: {fileID: 11400000, guid: 28fda63be82474609b7b406efcf47e23, type: 2}
 --- !u!1 &642967684
 GameObject:
   m_ObjectHideFlags: 0
@@ -7355,3 +7508,4 @@ SceneRoots:
   - {fileID: 1811838300}
   - {fileID: 1646026855}
   - {fileID: 1556502648}
+  - {fileID: 175460708}

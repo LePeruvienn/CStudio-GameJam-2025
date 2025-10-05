@@ -17,7 +17,7 @@ MonoBehaviour:
   dialogs:
   - text: "Le lait est un \xE9l\xE9ment crucial de la p\xE2te d'un g\xE2teau, bien
       jou\xE9!"
-    nextIndex: 99
+    nextIndex: 1
     isChoice: 0
     indexNextIfYes: 0
     indexNextIfNo: 0

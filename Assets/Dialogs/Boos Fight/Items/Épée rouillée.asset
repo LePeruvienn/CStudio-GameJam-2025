@@ -17,7 +17,7 @@ MonoBehaviour:
   dialogs:
   - text: "Elle n'en a pas l'air, mais cette \xE9p\xE9e est super puissante! Avec
       \xE7a, tu pourras couper les parts d'un g\xE2teau."
-    nextIndex: 99
+    nextIndex: 1
     isChoice: 0
     indexNextIfYes: 0
     indexNextIfNo: 0

@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
-  m_Name: Oeufs
+  m_Name: Default item
   m_EditorClassIdentifier: 
-  title: Oeufs
+  title: ???
   speed: 0
   dialogs:
-  - text: "Tu comptes tuer des petits poussins pour te faire un g\xE2teau \xE0 toi
-      tout seul? Esp\xE8ce de sadique."
+  - text: "C'est quoi ton truc? \xC7a sert \xE0 rien..."
     nextIndex: 1
     isChoice: 0
     indexNextIfYes: 0
