@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
   m_Name: Epee en toc
   m_EditorClassIdentifier: 
-  title: Epee du destin
+  title: "\xC9pee du destin"
   speed: 0
   dialogs:
-  - text: Voulez vous prendre cette objet ?
+  - text: Voulez vous prendre cet objet ?
     nextIndex: 0
     isChoice: 1
     indexNextIfYes: 1

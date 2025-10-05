@@ -10,32 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
-  m_Name: 1
+  m_Name: charlotte 1
   m_EditorClassIdentifier: 
-  title: MeufChiante
-  speed: 0
+  title: Charlotte
+  speed: 0.03
   dialogs:
-  - text: "Bonjour, grand h\xE9ros!"
-    nextIndex: 1
-    isChoice: 0
-    indexNextIfYes: 0
-    indexNextIfNo: 0
-    choiceTriggerAction: 0
-  - text: "\xCAtes-vous pr\xEAts \xE0 vaincre le monstre?"
+  - text: Tu vas voir M.Koala?
     nextIndex: 0
     isChoice: 1
-    indexNextIfYes: 2
-    indexNextIfNo: 1
-    choiceTriggerAction: 0
-  - text: AH CHIANT
-    nextIndex: 2
-    isChoice: 0
     indexNextIfYes: 1
     indexNextIfNo: 0
     choiceTriggerAction: 0
-  - text: TROP CONTENTE
-    nextIndex: 1
-    isChoice: 0
+  - text: "Tu pourras lui dire que j'ai laiss\xE9 ma farine dans la for\xEAt?"
+    nextIndex: 0
+    isChoice: 1
     indexNextIfYes: 1
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: Super, merci! Sa maison est en bas.
+    nextIndex: 99
+    isChoice: 0
+    indexNextIfYes: 0
     indexNextIfNo: 0
     choiceTriggerAction: 0

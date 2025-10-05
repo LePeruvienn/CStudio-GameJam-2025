@@ -9,15 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
-  m_Name: panneau 4 d
+  m_Script: {fileID: 11500000, guid: e5039bd97acd711efa17d3100df16f14, type: 3}
+  m_Name: "\xE9p\xE9e du destin"
   m_EditorClassIdentifier: 
-  title: 
-  speed: 0
-  dialogs:
-  - text: La vraie demeure du koala->
-    nextIndex: 1
-    isChoice: 0
-    indexNextIfYes: 0
-    indexNextIfNo: 0
-    choiceTriggerAction: 0
+  NPCname: 
+  dialogIndex: 0
+  isDead: 0
