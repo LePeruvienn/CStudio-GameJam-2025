@@ -29,6 +29,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BOOS_SCRIPT.unity
     guid: af4885b7c136cc6bbbea48c4b74d1947
+  - enabled: 1
+    path: Assets/Scenes/interface.unity
+    guid: d5c9dc7ce1fa85e4e9f3e81d9d1d66a0
+  - enabled: 1
+    path: Assets/Scenes/salle du boss.unity
+    guid: fc43d22e9aa2b4d77b523f9cc77d2be7
+  - enabled: 1
+    path: Assets/Scenes/template.unity
+    guid: 423a24b5aca7fbef8a0837fbab7be9e4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
