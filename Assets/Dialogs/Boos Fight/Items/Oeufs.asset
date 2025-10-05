@@ -10,19 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
-  m_Name: Intro
+  m_Name: Oeufs
   m_EditorClassIdentifier: 
-  title: 
+  title: Oeufs
   speed: 0
   dialogs:
-  - text: "Apr\xE8s de nombreuses heures \xE0 arpenter le royaume..."
-    nextIndex: 1
-    isChoice: 0
-    indexNextIfYes: 0
-    indexNextIfNo: 0
-    choiceTriggerAction: 0
-  - text: "Tu es enfin pr\xEAt."
-    nextIndex: 1
+  - text: "Tu comptes tuer des petits poussins pour te faire un g\xE2teau \xE0 toi
+      tout seul? Esp\xE8ce de sadique."
+    nextIndex: 99
     isChoice: 0
     indexNextIfYes: 0
     indexNextIfNo: 0

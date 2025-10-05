@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
-  m_Name: Intro
+  m_Name: Canard en plastique
   m_EditorClassIdentifier: 
-  title: 
-  speed: 0
+  title: Canard en plastique
+  speed: 0.01
   dialogs:
-  - text: "Apr\xE8s de nombreuses heures \xE0 arpenter le royaume..."
+  - text: '... '
     nextIndex: 1
     isChoice: 0
     indexNextIfYes: 0
     indexNextIfNo: 0
     choiceTriggerAction: 0
-  - text: "Tu es enfin pr\xEAt."
+  - text: Tu comptais faire quoi avec cet objet?
     nextIndex: 1
     isChoice: 0
     indexNextIfYes: 0

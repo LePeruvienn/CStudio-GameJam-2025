@@ -10,18 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
-  m_Name: Intro
+  m_Name: "\xC9\u0301pe\u0301e du destin"
   m_EditorClassIdentifier: 
-  title: 
+  title: "\xC9p\xE9e du destin"
   speed: 0
   dialogs:
-  - text: "Apr\xE8s de nombreuses heures \xE0 arpenter le royaume..."
-    nextIndex: 1
-    isChoice: 0
-    indexNextIfYes: 0
-    indexNextIfNo: 0
-    choiceTriggerAction: 0
-  - text: "Tu es enfin pr\xEAt."
+  - text: "L'\xE9p\xE9e s'est cass\xE9e au premier coup... Vous l'avez ramass\xE9e
+      sur le chemin ou quoi?"
     nextIndex: 1
     isChoice: 0
     indexNextIfYes: 0
