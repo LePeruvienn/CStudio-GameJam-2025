@@ -15,47 +15,27 @@ MonoBehaviour:
   title: MeufChiante
   speed: 0
   dialogs:
-  - text: BONJOUR
+  - text: "Bonjour, grand h\xE9ros!"
     nextIndex: 1
     isChoice: 0
     indexNextIfYes: 0
     indexNextIfNo: 0
-    actionIfYes:
-      m_PersistentCalls:
-        m_Calls: []
-    actionIfNo:
-      m_PersistentCalls:
-        m_Calls: []
-  - text: "\xE7a va ?"
+    choiceTriggerAction: 0
+  - text: "\xCAtes-vous pr\xEAts \xE0 vaincre le monstre?"
     nextIndex: 0
     isChoice: 1
     indexNextIfYes: 2
     indexNextIfNo: 1
-    actionIfYes:
-      m_PersistentCalls:
-        m_Calls: []
-    actionIfNo:
-      m_PersistentCalls:
-        m_Calls: []
+    choiceTriggerAction: 0
   - text: AH CHIANT
     nextIndex: 2
     isChoice: 0
     indexNextIfYes: 1
     indexNextIfNo: 0
-    actionIfYes:
-      m_PersistentCalls:
-        m_Calls: []
-    actionIfNo:
-      m_PersistentCalls:
-        m_Calls: []
+    choiceTriggerAction: 0
   - text: TROP CONTENTE
     nextIndex: 1
     isChoice: 0
     indexNextIfYes: 1
     indexNextIfNo: 0
-    actionIfYes:
-      m_PersistentCalls:
-        m_Calls: []
-    actionIfNo:
-      m_PersistentCalls:
-        m_Calls: []
+    choiceTriggerAction: 0

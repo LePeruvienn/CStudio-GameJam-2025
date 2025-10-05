@@ -104,7 +104,10 @@ public class DialogUIManager : MonoBehaviour
 
 			_isDialogOn = false;
 			dialogBox.SetActive(false);
-			_playerMovement.setCanMove(true);
+
+			if (_playerMovement != null)
+				_playerMovement.setCanMove(true);
+
 			return;
 		}
 
@@ -114,8 +117,11 @@ public class DialogUIManager : MonoBehaviour
 		StartCoroutine(TypeLine(currentDialog.text, currentDialog.isChoice));
 	}
 
-	public void StartDialog(DialogData data, UnityEvent actionYes, UnityEvent actionNo)
+	public void StartDialog(DialogData data, UnityEvent actionYes = null, UnityEvent actionNo = null)
 	{
+		if (data.dialogs.Length == 0)
+			return;
+
 		if (_playerMovement != null )
 			_playerMovement.setCanMove(false);
 

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
+  m_Name: miku 1
+  m_EditorClassIdentifier: 
+  title: Mikool
+  speed: 0.003
+  dialogs:
+  - text: Hey! Tu veux que je te donne des infos sur les objets?
+    nextIndex: 0
+    isChoice: 1
+    indexNextIfYes: 1
+    indexNextIfNo: 2
+    choiceTriggerAction: 0
+  - text: "Alors, M. Koala peut te donner un objet tr\xE8s puissant pour te battre
+      contre le monstre."
+    nextIndex: 2
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: ARA ARA SAYONARA
+    nextIndex: 99
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: "Tu pourras aussi trouver des objets dans la for\xEAt, un endroit tr\xE8s
+      joli."
+    nextIndex: 1
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: "Sinon, balades toi dans le ch\xE2teau pour trouver divers objets int\xE9ressants!
+      Bonne recherche!"
+    nextIndex: 1
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0

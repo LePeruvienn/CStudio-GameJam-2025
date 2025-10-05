@@ -15,7 +15,7 @@ public class gestionBouton1 : MonoBehaviour {
         Debug.Log("charge une scene");
         SceneManager.LoadScene(nomDeScene, LoadSceneMode.Additive);
         EditorSceneManager.OpenScene("Assets/Scenes/donjoon.unity");
-    }
+    } 
     public void btnNewScene2(string nomDeScene)
     {
         Debug.Log("charge une scene");
