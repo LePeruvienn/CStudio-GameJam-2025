@@ -301,17 +301,41 @@ MonoBehaviour:
   loseImage: {fileID: 1485666105}
   introDialogs:
   - {fileID: 11400000, guid: 43720feb8f0fdfd9da0060930c5f6705, type: 2}
-  defaultDialog: {fileID: 11400000, guid: 323a1b9ba778b2a0cb58a03345ecaf94, type: 2}
+  defaultDialog: {fileID: 11400000, guid: cfee0c10d3392405b9c64fe3dffc79e2, type: 2}
   winDialogs:
   - {fileID: 11400000, guid: 1f0b828eba0c0e023bb068309a4b67a2, type: 2}
   loseDialogs:
   - {fileID: 11400000, guid: 6282b7e51d17320ffbf8f6d551e1bc4b, type: 2}
-  itemsNeededForWin: []
+  itemsNeededForWin:
+  - "H\xE2che"
+  - Beurre pas encore fondu
+  - "\xC9p\xE9e rouill\xE9e"
+  - Lait
+  - tomate
+  - Farine
   itemDialogs:
-  - itemName: 1
-    dialog: {fileID: 11400000, guid: 9cc689355ffddfca1af5e46976c6c581, type: 2}
-  - itemName: 2
-    dialog: {fileID: 11400000, guid: 7dddde6123ee89e3e9c8ea5040558dca, type: 2}
+  - itemName: Beurre pas encore fondu
+    dialog: {fileID: 11400000, guid: a8269f04749ea4050ab169762a12f71b, type: 2}
+  - itemName: Canard en plastique
+    dialog: {fileID: 11400000, guid: 323a1b9ba778b2a0cb58a03345ecaf94, type: 2}
+  - itemName: Escargot
+    dialog: {fileID: 11400000, guid: 01fb250909d254203b2103e804735abf, type: 2}
+  - itemName: Farine
+    dialog: {fileID: 11400000, guid: 91ff83019ed514bbf9def4c197f0deaa, type: 2}
+  - itemName: Fraise
+    dialog: {fileID: 11400000, guid: 2c02afd09042c4b06bfb327999ebc220, type: 2}
+  - itemName: "H\xE2che"
+    dialog: {fileID: 11400000, guid: 4701e8f2efab845b3971f1b2e492514f, type: 2}
+  - itemName: Lait
+    dialog: {fileID: 11400000, guid: 9dffcf3029daf45efb13c5dc959fbab6, type: 2}
+  - itemName: Oeufs
+    dialog: {fileID: 11400000, guid: db9b5b53ba93c43ee82f284ff7250de5, type: 2}
+  - itemName: tomate
+    dialog: {fileID: 11400000, guid: 88378d5ab8a164446a17ecbdee353d16, type: 2}
+  - itemName: "\xC9p\xE9e rouill\xE9e"
+    dialog: {fileID: 11400000, guid: 506a3503ef70a48f9baace249cf16fae, type: 2}
+  - itemName: "\xC9p\xE9e du destin"
+    dialog: {fileID: 11400000, guid: 28fda63be82474609b7b406efcf47e23, type: 2}
 --- !u!1 &642967684
 GameObject:
   m_ObjectHideFlags: 0
