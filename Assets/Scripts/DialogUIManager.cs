@@ -104,7 +104,10 @@ public class DialogUIManager : MonoBehaviour
 
 			_isDialogOn = false;
 			dialogBox.SetActive(false);
-			_playerMovement.setCanMove(true);
+
+			if (_playerMovement != null)
+				_playerMovement.setCanMove(true);
+
 			return;
 		}
 

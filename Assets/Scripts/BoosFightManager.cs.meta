@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5997edb9efbcd6b13a511e703cb3bc81
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - playerData: {fileID: 11400000, guid: f7d5261993dfd6381821465581cd45d3, type: 2}
+  - dialogUIManager: {instanceID: 0}
+  - blackBg: {instanceID: 0}
+  - player: {instanceID: 0}
+  - boss: {instanceID: 0}
+  - defaultDialog: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

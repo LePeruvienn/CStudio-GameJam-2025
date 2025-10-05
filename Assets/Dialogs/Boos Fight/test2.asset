@@ -9,13 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90e1ce5ee193aa25c9b626314b3f4a4a, type: 3}
-  m_Name: PlayerData
+  m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
+  m_Name: test2
   m_EditorClassIdentifier: 
-  inventory:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  killedNpcs: []
+  title: 2
+  speed: 0
+  dialogs:
+  - text: "tu as utlis\xE9 blabla 2"
+    nextIndex: 1
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
