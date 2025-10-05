@@ -227,8 +227,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 43720feb8f0fdfd9da0060930c5f6705, type: 2}
   defaultDialog: {fileID: 11400000, guid: 323a1b9ba778b2a0cb58a03345ecaf94, type: 2}
   winDialogs:
-  - {fileID: 0}
-  loseDialogs: []
+  - {fileID: 11400000, guid: 1f0b828eba0c0e023bb068309a4b67a2, type: 2}
+  loseDialogs:
+  - {fileID: 11400000, guid: 6282b7e51d17320ffbf8f6d551e1bc4b, type: 2}
   itemsNeededForWin: []
   itemDialogs:
   - itemName: 1

@@ -41,6 +41,8 @@ public class BossFightManager : MonoBehaviour
 
 	private Dictionary<string, DialogData> _dialogDict;
 
+	private bool END = false;
+
 	private void Start()
 	{
 		blackBg.SetActive(true);
@@ -60,6 +62,18 @@ public class BossFightManager : MonoBehaviour
 
 	private void Update()
 	{
+		if (END) {
+
+			if (dialogUIManager.getIsDialogOn() == false)
+			{
+				blackBg.SetActive(false);
+				winImage.SetActive(_haveWin);
+				loseImage.SetActive(!_haveWin);
+			}
+
+			return;
+		}
+
 		// Si un dialogue est en cours, on ne fait rien
 		if (dialogUIManager.getIsDialogOn())
 			return;
@@ -100,8 +114,9 @@ public class BossFightManager : MonoBehaviour
 			_currentIndex++;
 		}
 
-		winImage.SetActive(_haveWin);
-		loseImage.SetActive(!_haveWin);
+		blackBg.SetActive(true);
+
+		END = true;
 	}
 
 	private bool handleFight()
