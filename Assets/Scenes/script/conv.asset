@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   speed: 0
-  dialogs: []
+  dialogs:
+  - text: 
+    nextIndex: 0
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
