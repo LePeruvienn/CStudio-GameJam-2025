@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8341642441469470292}
   - component: {fileID: 3476903223259381751}
   - component: {fileID: 1503847851879120089}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SkateBoardKid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

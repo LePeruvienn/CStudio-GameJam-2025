@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
+  m_Name: NPC lunettes D1
+  m_EditorClassIdentifier: 
+  title: Gabriel
+  speed: 0
+  dialogs:
+  - text: Tu vas affronter le monstre?
+    nextIndex: 0
+    isChoice: 1
+    indexNextIfYes: 1
+    indexNextIfNo: 2
+    choiceTriggerAction: 0
+  - text: "Vu ta t\xEAte je ne suis pas s\xFBr que tu t'en sortes..."
+    nextIndex: 2
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: Haha, t'es qu'un faible.
+    nextIndex: 99
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: "Comme je suis g\xE9n\xE9reux et bon, je veux bien te donner une astuce."
+    nextIndex: 1
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: "Il faut aller chercher des objets qui t'aideront \xE0 battre le monstre."
+    nextIndex: 1
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: "Le koala pourra s\xFBrement t'en donner."
+    nextIndex: 1
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: "O\xF9 il se trouve? Mais je suis pas Google Maps non plus."
+    nextIndex: 1
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: Regarde les panneaux, ils te guideront. T'as compris?
+    nextIndex: 0
+    isChoice: 1
+    indexNextIfYes: 1
+    indexNextIfNo: 2
+    choiceTriggerAction: 0
+  - text: "Vas-y alors. Mais ne t'inqui\xE8te pas, tu as tout ton temps."
+    nextIndex: 99
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0
+  - text: "Ben d\xE9brouille-toi!"
+    nextIndex: 99
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    choiceTriggerAction: 0

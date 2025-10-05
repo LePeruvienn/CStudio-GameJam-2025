@@ -116,6 +116,9 @@ public class DialogUIManager : MonoBehaviour
 
 	public void StartDialog(DialogData data, UnityEvent actionYes, UnityEvent actionNo)
 	{
+		if (data.dialogs.Length == 0)
+			return;
+
 		if (_playerMovement != null )
 			_playerMovement.setCanMove(false);
 

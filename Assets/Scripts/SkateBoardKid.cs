@@ -13,6 +13,7 @@ public class SkateBoardKid : MonoBehaviour
 
 	[Header("References")]
 	[SerializeField] private Transform playerTransform;
+	[SerializeField] private NPCData npcData;
 
 	private Rigidbody2D _rigidbody;
 	private Animator _animator;
@@ -20,16 +21,22 @@ public class SkateBoardKid : MonoBehaviour
 	private bool _haveToFollowPlayer = false;
 	private int _direction = 0;
 
+	private LayerMask playerLayerMask;
+
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
 		_rigidbody = GetComponent<Rigidbody2D>();
 		_animator = GetComponent<Animator>();
+
+		playerLayerMask = LayerMask.GetMask("Player");
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
+		if (npcData.isDead) return;
+
 		if (_haveToFollowPlayer)
 			followPlayer();
 		else
@@ -71,5 +78,15 @@ public class SkateBoardKid : MonoBehaviour
 
 		if (distance < rangeToTrigger)
 			_haveToFollowPlayer = true;
+	}
+
+	private void OnCollisionEnter2D(Collision2D other)
+	{
+		if (((1 << other.gameObject.layer) & playerLayerMask) == 0)
+			return;
+
+		_rigidbody.linearVelocity = Vector2.zero;
+		_direction = 0;
+		_animator.SetInteger("directionX", _direction);
 	}
 }
