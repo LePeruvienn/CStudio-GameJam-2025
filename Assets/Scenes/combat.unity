@@ -2279,8 +2279,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891b134bf1a471bfd95b18e23a5c30a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogData: {fileID: 11400000, guid: 2d556f0ccabc4135c8c6cf2b3c141d5e, type: 2}
+  dialogs: []
   dialogUIManager: {fileID: 314950136}
+  playerData: {fileID: 0}
+  npcData: {fileID: 0}
+  actionIfYes:
+    m_PersistentCalls:
+      m_Calls: []
+  actionIfNo:
+    m_PersistentCalls:
+      m_Calls: []
+  deathJumpForce: 6
+  deathRotateSpeed: 2
+  deathDuration: 10
+  deathParticle: {fileID: 0}
 --- !u!1 &1948448198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,8 +2692,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891b134bf1a471bfd95b18e23a5c30a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogData: {fileID: 11400000, guid: 2d556f0ccabc4135c8c6cf2b3c141d5e, type: 2}
+  dialogs: []
   dialogUIManager: {fileID: 314950136}
+  playerData: {fileID: 0}
+  npcData: {fileID: 0}
+  actionIfYes:
+    m_PersistentCalls:
+      m_Calls: []
+  actionIfNo:
+    m_PersistentCalls:
+      m_Calls: []
+  deathJumpForce: 6
+  deathRotateSpeed: 2
+  deathDuration: 10
+  deathParticle: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
