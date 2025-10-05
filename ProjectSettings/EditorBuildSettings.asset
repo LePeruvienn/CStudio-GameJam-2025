@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/petite salle.unity
     guid: e9e0c3206217341b4b05653523ea33e4
+  - enabled: 1
+    path: Assets/Scenes/combat.unity
+    guid: d7d91777db111e84d9c54b1cf7648f81
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
