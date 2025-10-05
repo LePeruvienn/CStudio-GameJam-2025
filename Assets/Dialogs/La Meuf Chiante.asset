@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db92b741cb110ff4685ecbb492ffa0c7, type: 3}
+  m_Name: La Meuf Chiante
+  m_EditorClassIdentifier: 
+  title: MeufChiante
+  speed: 0
+  dialogs:
+  - text: BONJOUR
+    nextIndex: 1
+    isChoice: 0
+    indexNextIfYes: 0
+    indexNextIfNo: 0
+    actionIfYes:
+      m_PersistentCalls:
+        m_Calls: []
+    actionIfNo:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "\xE7a va ?"
+    nextIndex: 0
+    isChoice: 1
+    indexNextIfYes: 2
+    indexNextIfNo: 1
+    actionIfYes:
+      m_PersistentCalls:
+        m_Calls: []
+    actionIfNo:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: AH CHIANT
+    nextIndex: 2
+    isChoice: 0
+    indexNextIfYes: 1
+    indexNextIfNo: 0
+    actionIfYes:
+      m_PersistentCalls:
+        m_Calls: []
+    actionIfNo:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: TROP CONTENTE
+    nextIndex: 1
+    isChoice: 0
+    indexNextIfYes: 1
+    indexNextIfNo: 0
+    actionIfYes:
+      m_PersistentCalls:
+        m_Calls: []
+    actionIfNo:
+      m_PersistentCalls:
+        m_Calls: []
