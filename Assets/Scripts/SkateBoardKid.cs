@@ -14,6 +14,7 @@ public class SkateBoardKid : MonoBehaviour
 	[Header("References")]
 	[SerializeField] private Transform playerTransform;
 	[SerializeField] private NPCData npcData;
+	[SerializeField] private GameObject triggers;
 
 	private Rigidbody2D _rigidbody;
 	private Animator _animator;
@@ -26,6 +27,12 @@ public class SkateBoardKid : MonoBehaviour
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
+		if (npcData.isDead) {
+			Destroy(triggers);
+
+			Destroy(gameObject);
+		}
+
 		_rigidbody = GetComponent<Rigidbody2D>();
 		_animator = GetComponent<Animator>();
 
