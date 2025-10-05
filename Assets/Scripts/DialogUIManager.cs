@@ -23,6 +23,8 @@ public class DialogUIManager : MonoBehaviour
 	private bool _isChoiceYes;
 	private DialogData _currentData;
 
+	private int _currentResult;
+
 	private void Start()
 	{
 		dialogBox.SetActive(false);
