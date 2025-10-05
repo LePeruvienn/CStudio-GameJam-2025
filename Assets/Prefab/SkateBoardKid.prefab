@@ -9,14 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3796344047405418327}
+  - component: {fileID: 814904045163158353}
+  - component: {fileID: 5406763904154090804}
   - component: {fileID: 5151619157387024974}
-  - component: {fileID: 4558908637012814513}
-  - component: {fileID: 3160635331150425682}
   - component: {fileID: 8341642441469470292}
   - component: {fileID: 3476903223259381751}
   - component: {fileID: 1503847851879120089}
   m_Layer: 7
-  m_Name: Player
+  m_Name: SkateBoardKid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,6 +37,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &814904045163158353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164520920777343380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891b134bf1a471bfd95b18e23a5c30a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogs: []
+  dialogUIManager: {fileID: 0}
+  playerData: {fileID: 0}
+  npcData: {fileID: 0}
+  actionIfYes:
+    m_PersistentCalls:
+      m_Calls: []
+  actionIfNo:
+    m_PersistentCalls:
+      m_Calls: []
+  deathJumpForce: 6
+  deathRotateSpeed: 2
+  deathDuration: 10
+  deathParticle: {fileID: 0}
+--- !u!114 &5406763904154090804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164520920777343380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504837d823f936b7cac1f0fb2b438129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  rangeToTrigger: 5
+  followRange: 5
+  leftBoundary: {fileID: 0}
+  rightBoundary: {fileID: 0}
+  playerTransform: {fileID: 0}
 --- !u!212 &5151619157387024974
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81,7 +125,7 @@ SpriteRenderer:
   m_SortingLayerID: 1783155623
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3348418769470225044, guid: 3510c4627f2a8d817b8619fe064d4457, type: 3}
+  m_Sprite: {fileID: 6898110968040145199, guid: 137566b73251a198c8e01d59844ead1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -92,32 +136,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4558908637012814513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2164520920777343380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9d9ce72f19a678eaaeac4990e7c5f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
---- !u!114 &3160635331150425682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2164520920777343380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2639fdca4d200c583b61cbad36042cfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionRange: 0.5
 --- !u!95 &8341642441469470292
 Animator:
   serializedVersion: 7
@@ -128,7 +146,7 @@ Animator:
   m_GameObject: {fileID: 2164520920777343380}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 16b9085c91d81d3938c7a212553ac046, type: 2}
+  m_Controller: {fileID: 9100000, guid: 356479b25d9ef13db9e6a57544971a20, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -152,7 +170,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000000
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -205,7 +223,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.90625, y: 1.71875}
+    oldSize: {x: 0.875, y: 1.53125}
     newSize: {x: 0.29, y: 0.55}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -58,7 +58,6 @@ public class PlayerMovement : MonoBehaviour
 		_spriteRenderer.flipX = (_lastDirection.x == -1);
 
 		_rigidBody.linearVelocity = _direction * speed;
-
 	}
 
 	public void setCanMove(bool val) {
