@@ -117,7 +117,7 @@ public class DialogUIManager : MonoBehaviour
 		StartCoroutine(TypeLine(currentDialog.text, currentDialog.isChoice));
 	}
 
-	public void StartDialog(DialogData data, UnityEvent actionYes, UnityEvent actionNo)
+	public void StartDialog(DialogData data, UnityEvent actionYes = null, UnityEvent actionNo = null)
 	{
 		if (data.dialogs.Length == 0)
 			return;

@@ -12,6 +12,8 @@ public class BossFightManager : MonoBehaviour
 	[SerializeField] private GameObject blackBg;
 	[SerializeField] private GameObject player;
 	[SerializeField] private GameObject boss;
+	[SerializeField] private GameObject winImage;
+	[SerializeField] private GameObject loseImage;
 
 	[Header("INTRO DIALOGS")]
 	[SerializeField] private DialogData[] introDialogs;
@@ -41,6 +43,10 @@ public class BossFightManager : MonoBehaviour
 
 	private void Start()
 	{
+		blackBg.SetActive(true);
+		winImage.SetActive(false);
+		loseImage.SetActive(false);
+
 		inventory = playerData.GetInventory().ToArray();
 		
 		// Construire le dictionnaire clé → dialogue
@@ -74,6 +80,8 @@ public class BossFightManager : MonoBehaviour
 			return;
 		}
 
+		blackBg.SetActive(false);
+
 		// Étape 2 : dialogues liés à l’inventaire
 		bool hasEnded = handleFight();
 
@@ -91,6 +99,9 @@ public class BossFightManager : MonoBehaviour
 			dialogUIManager.StartDialog(finalDialogs[_currentIndex - introDialogs.Length], null, null);
 			_currentIndex++;
 		}
+
+		winImage.SetActive(_haveWin);
+		loseImage.SetActive(!_haveWin);
 	}
 
 	private bool handleFight()
@@ -120,6 +131,11 @@ public class BossFightManager : MonoBehaviour
 		_currentItemIndex++;
 
 		return false;
+	}
+
+	public void goToMenu()
+	{
+		Debug.Log("GO TO MENU !!!!");
 	}
 }
 
