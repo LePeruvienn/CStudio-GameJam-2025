@@ -16,6 +16,12 @@ public class NPCInteraction : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
+		// FOR DEBUG !! TO DELETE AFTER
+		// TODO MAKE ALL SCRIPTABLES OBJECTS RESET WHEN NEW GAME
+		npcData.isDead = false;
+		npcData.dialogIndex = 0;
+		// END
+
         if (npcData.isDead)
 			Destroy(gameObject);
     }
