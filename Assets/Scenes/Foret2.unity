@@ -283,7 +283,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 50d8a0ad811d5636486206865976859b, type: 2}
     - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -294,6 +294,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
+      propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 149351442}
@@ -302,11 +306,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1963223180}
     - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
+      propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1377567840}
+    - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
+      propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
@@ -318,12 +330,20 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
+      propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: addSkateboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: NPCInteraction, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
+      propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
@@ -335,6 +355,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
       propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 814904045163158353, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
+      propertyPath: actionIfYes.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1503847851879120089, guid: eecc18fd7d85e1daba2827bec8356f0c, type: 3}
@@ -23175,8 +23199,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1896973176}
-  - {fileID: 4727477056183433940}
   - {fileID: 26600065}
+  - {fileID: 4727477056183433940}
   - {fileID: 2082809250}
   - {fileID: 1963223181}
   - {fileID: 149351434}

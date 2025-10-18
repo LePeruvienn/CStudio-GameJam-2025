@@ -9,6 +9,9 @@ public class NPCInteraction : MonoBehaviour
 	[SerializeField] private PlayerData playerData;
 	[SerializeField] private NPCData npcData;
 
+	[Header("Triggers to delete on death")]
+	[SerializeField] private GameObject[] linkedTriggers;
+
 	[Header("Funtion to trigger if event")]
 	[SerializeField] private UnityEvent actionIfYes;
 	[SerializeField] private UnityEvent actionIfNo;
@@ -88,6 +91,10 @@ public class NPCInteraction : MonoBehaviour
 		// Optionally destroy it after a certain time
 		float duration = instantiatedParticles.main.duration + instantiatedParticles.main.startLifetime.constant;
 		Destroy(instantiatedParticles.gameObject, duration);
+
+		// Delete all linked triggers of the NPC
+		for (int i = 0; i < linkedTriggers.Length; i++)
+			Destroy(linkedTriggers[i]);
 	}
 
 	public void GiveItem(string itemName) {

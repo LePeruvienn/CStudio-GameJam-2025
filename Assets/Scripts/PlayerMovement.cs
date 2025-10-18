@@ -2,27 +2,38 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-	[SerializeField] private int speed = 2;
+	[Header("Statistics")]
+	[SerializeField] private int startSpeed = 2;
+	[SerializeField] private int skateboardSpeed = 3;
+
+	[Header("Skateboard")]
+	[SerializeField] private GameObject skateboardObj;
+
 
 	private Rigidbody2D _rigidBody;
 	private Animator _animator;
 	private SpriteRenderer _spriteRenderer;
 
+	private int _speed = 2;
 	private bool _canMove = true;
 	private Vector2Int _direction = new Vector2Int(0, 0);
 	private Vector2Int _lastDirection = new Vector2Int(0, 0);
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void Start()
-    {
-        _rigidBody = GetComponent<Rigidbody2D>();
+	// Start is called once before the first execution of Update after the MonoBehaviour is created
+	private void Start()
+	{
+		_rigidBody = GetComponent<Rigidbody2D>();
 		_animator = GetComponent<Animator>();
 		_spriteRenderer = GetComponent<SpriteRenderer>();
-    }
 
-    // Update is called once per frame
-    private void Update()
-    {
+		skateboardObj.SetActive(false);
+
+		_speed = startSpeed;
+	}
+
+	// Update is called once per frame
+	private void Update()
+	{
 		if (_canMove == true)
 			HandleMovement();
 	}
@@ -57,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
 		_spriteRenderer.flipX = (_lastDirection.x == -1);
 
-		_rigidBody.linearVelocity = _direction * speed;
+		_rigidBody.linearVelocity = _direction * _speed;
 	}
 
 	public void setCanMove(bool val) {
@@ -65,5 +76,11 @@ public class PlayerMovement : MonoBehaviour
 		_animator.SetBool("isWalking", false);
 		_rigidBody.linearVelocity = Vector2.zero;
 		_canMove = val;
+	}
+
+	public void addSkateboard() {
+
+		_speed = skateboardSpeed;
+		skateboardObj.SetActive(true);
 	}
 }
