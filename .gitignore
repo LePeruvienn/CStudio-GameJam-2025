@@ -7,6 +7,7 @@ Assets/TextMesh Pro/
 # vs, vscode
 .vscode/
 .vs/
+.vsconfig
 
 # This .gitignore file should be placed at the root of your Unity project directory
 #
