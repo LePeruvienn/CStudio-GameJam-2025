@@ -108,6 +108,7 @@ MonoBehaviour:
   startSpeed: 4
   skateboardSpeed: 6
   skateboardObj: {fileID: 2803534492817295134}
+  playerData: {fileID: 11400000, guid: f7d5261993dfd6381821465581cd45d3, type: 2}
 --- !u!114 &3160635331150425682
 MonoBehaviour:
   m_ObjectHideFlags: 0

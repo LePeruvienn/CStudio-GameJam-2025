@@ -6,6 +6,7 @@ public class PlayerData : ScriptableObject
 {
 	[SerializeField] private List<string> inventory = new List<string>();
 	[SerializeField] private List<string> killedNpcs = new List<string>();
+	[SerializeField] private bool haveSkateboard = false;
 
 	public void Reset()
 	{
@@ -41,5 +42,15 @@ public class PlayerData : ScriptableObject
 	public List<string> GetInventory()
 	{
 		return inventory;
+	}
+
+	public bool GetHaveASkateboard()
+	{
+		return haveSkateboard;
+	}
+
+	public void SetHaveSkateboard(bool val)
+	{
+		haveSkateboard = val;
 	}
 }

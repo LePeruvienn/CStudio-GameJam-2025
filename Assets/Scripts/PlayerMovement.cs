@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
 	[Header("Skateboard")]
 	[SerializeField] private GameObject skateboardObj;
 
+	[Header("References")]
+	[SerializeField] private PlayerData playerData;
+
 
 	private Rigidbody2D _rigidBody;
 	private Animator _animator;
@@ -29,6 +32,9 @@ public class PlayerMovement : MonoBehaviour
 		skateboardObj.SetActive(false);
 
 		_speed = startSpeed;
+
+		if (playerData.GetHaveASkateboard())
+			setSkateboard(true);
 	}
 
 	// Update is called once per frame
@@ -78,9 +84,10 @@ public class PlayerMovement : MonoBehaviour
 		_canMove = val;
 	}
 
-	public void addSkateboard() {
+	public void setSkateboard(bool val) {
 
-		_speed = skateboardSpeed;
-		skateboardObj.SetActive(true);
+		_speed = (val == true) ? skateboardSpeed : startSpeed;
+		skateboardObj.SetActive(val);
+		playerData.SetHaveSkateboard(val);
 	}
 }

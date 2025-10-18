@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SkateBoardKit
   m_EditorClassIdentifier: 
   NPCname: 
-  dialogIndex: 0
+  dialogIndex: 7
   isDead: 0
