@@ -1,5 +1,6 @@
 # Ignore TEXTMeshPRo assets
 Assets/TextMesh Pro/
+Assets/TextMesh Pro.meta
 
 # Ignore .DS_Store mac files
 .DS_Store
